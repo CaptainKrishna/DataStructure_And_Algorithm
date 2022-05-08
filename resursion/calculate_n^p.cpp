@@ -1,4 +1,4 @@
-// Calculate the nraised to the power of p
+// Calculate the n raised to the power of p
 #include <iostream>
 using namespace std;
 // Sum function
