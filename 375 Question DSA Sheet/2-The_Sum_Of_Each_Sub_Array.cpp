@@ -1,4 +1,4 @@
-// Program for Finding Maximum Sum of the Sum of Each Sub Array
+// Program for Finding the Maximum Sum of Each Sub Array 
 #include "bits/stdc++.h"
 using namespace std;
 // Function for Max Sum of Sub array
