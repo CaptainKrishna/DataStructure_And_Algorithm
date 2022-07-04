@@ -1,3 +1,4 @@
+// Static Function And Static Variable in Cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,9 +17,13 @@ public:
     }
     void showData()
     {
-        cout << "Your Data " << count << "is:" << id;
+        cout << "Your Data " << count << "is:" << id<<endl;
+    }
+    static void getCount(){
+        cout<<count<<endl;
     }
 };
+// Declare the Static Value
 int Employees ::count;
 
 int main()
@@ -32,5 +37,8 @@ int main()
 
     yee.setData();
     yee.showData();
+    // Static Function call only Static Value
+    // Static Function
+    Employees::getCount();
     return 0;
 }
