@@ -1,4 +1,4 @@
-// structure Union And Enum 
+// Structure And Tydef Function in Cpp Programme 
 #include<bits/stdc++.h>
 using namespace std;
 typedef struct employes{
