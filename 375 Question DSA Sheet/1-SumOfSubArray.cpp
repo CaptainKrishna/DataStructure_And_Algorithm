@@ -22,6 +22,6 @@ int main()
     int arr[] = {1, 2, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
     int max_sum = MaxSum(arr, n);
-    cout << "finale RESULT=" << max_sum;
+    cout << "Final Result =" << max_sum;
     return 0;
 }
