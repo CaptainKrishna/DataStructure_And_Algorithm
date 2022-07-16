@@ -1,4 +1,5 @@
 // Array in JavaScript
+
 // Array Declaring
 const fruits=["apple","Banana","Orange",]
 
