@@ -24,6 +24,6 @@ int main(){
     getline(hin,name1);
     // Print the data
     cout<<name1;
- 
+
     return 0;
 }
