@@ -38,7 +38,8 @@ console.log(newdata.get(person1).id)
 
 // How to Clone Object
 const obj={Name:"Krishna",Last:"Vishwakarma"}
-// Using assign Method 
+const objdata={Name:"Krishna",Last:"Vishwakarma"}
+// Using assign Method for cloning the Object
 const obj2=Object.assign(obj)
 console.log(obj2)
 console.log(obj2.Name)
