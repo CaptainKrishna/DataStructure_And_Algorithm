@@ -26,14 +26,19 @@ for(let [Key ,Data] of Person){
     console.log(Key+":"+Data)
 }
 
+
 const newdata=new Map();
-const person1={
-    "Name":"Krishna",
-    "age":22
-}
-newdata.set(person1)
+const person1={}
+newdata.set(person1,{id:40,"add":"Shanti Nagar"})
 // We use this Method for acses the Object
 // console.log(newdata.age)
 console.log(newdata)
-console.log(newdata.get(person1).age)
+// Object acses in Map
+console.log(newdata.get(person1).id)
 
+// How to Clone Object
+const obj={Name:"Krishna",Last:"Vishwakarma"}
+// Using assign Method 
+const obj2=Object.assign(obj)
+console.log(obj2)
+console.log(obj2.Name)
