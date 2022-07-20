@@ -135,3 +135,74 @@ console.log(va)
 console.clear()
 
 // *****************************************************
+// Object Making in JavaScript ,in JavaScript Object are Fake
+// that was we are using function Method for Making Object
+// Old Object MEthod in JavaScript
+class Animal{
+    // for Msking Objects
+    constructor(Name,Age,Speed){
+        this.Name=Name,
+        this.Age=Age,
+        this.Speed=Speed
+    }
+    // Mthod Creating 
+    about(){
+        console.log(`${this.Name} age is ${this.Age} and Speed is ${this.Speed}`)       
+    }
+}
+
+// Drived Class Making 
+class Food extends Animal{
+
+    constructor(Name,Age,Speed,food){
+        // Super Method For calling Base Class 
+        super(Name,Age,Speed)
+        
+        this.food=food
+    }
+
+    // when we use get Method in front of Function name 
+    // We treat function name as Object
+    get about(){
+        console.log(`${this.Name} age is ${this.Age} and Speed is ${this.Speed}`)
+        console.log(`Favorate Food is ${this.food}`)       
+
+    }
+}
+// Base class object Creating
+const use5=new Animal("Tommy",3,45)
+use5.about()
+
+// Derived class object Creating
+const Tommy=new Food("Tommy",3,45,"Chapati")
+// Function Calling after get Method 
+Tommy.about
+
+// ****************************************************
+
+console.clear()
+
+// ****************************************************
+
+// Static Method for Direct Calling Function 
+
+class Person{
+    // Constructor Making
+    constructor(Name,Age,Speed){
+        this.Name=Name,
+        this.Age=Age,
+        this.Speed=Speed
+    }
+    // Mthod Creating 
+    static about(){
+        console.log(`${this.Name} age is ${this.Age} and Speed is ${this.Speed}`)       
+    }
+}
+// Class Name can Easyly call the Function After static function
+Person.about()
+
+// *****************************************************
+
+console.clear()
+
+// *****************************************************
