@@ -1,5 +1,5 @@
 // ************************************************
-// Method : Function Inside Object is Called MEthod
+// Method : Function Inside Object is Called Method
 const obj={
     firstName:"Krishna",
     lastName:"Vishwakarma",
