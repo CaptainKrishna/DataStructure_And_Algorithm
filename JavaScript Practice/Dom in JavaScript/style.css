@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.Header{
+    max-width: 1200px;
+    min-width: none;
+    margin:auto;
+    display:flex;
+}
+.logo{
+    padding:5px;
+    font-size:x-large;
+    font-weight: 800;
+    color:#000000;
+}
+.nav-item{
+    display: flex;
+    margin:auto;    
+}
+.nav-list{
+    padding: 2px;
+    display: flex;
+    margin-left: 20px;
+}
+.Image{
+
+    height: 60vh;
+    width: 100%;
+    background: url("./wallpaperflare.com_wallpaper.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat ;
+}
+.Head{
+    background-color: aqua;
+}
+.item{
+    padding: 40px ;
+    background-color: #ffff;
+    margin-top: -20vh;
+    padding:0px 20px 0px 100px;
+    color:black;
+}
+.btn{
+    margin: 10px;
+    background-color: rgb(0, 233, 58);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    color:white;
+}
