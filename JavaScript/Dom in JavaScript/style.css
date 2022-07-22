@@ -50,3 +50,16 @@
     padding: 5px;
     color:white;
 }
+.bg-Dark{
+    background-color: #000000;
+    color:white;
+}
+.todo{
+    margin: auto;
+    width: 400px;
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
