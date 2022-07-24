@@ -38,12 +38,18 @@ void Display(node * head){
 
 // reverse using Recursion Way
 node* Nreverse(node* &head){
+    // Base Condition
     if(head==NULL || head->next==NULL){
         return head;
     }
+    // Making New Node   
     node* newnode=Nreverse(head->next);
+    // NULL->1->2  TO  2->1 
     head->next->next=head;
+    // NULL->1->2  TO  2->1->NULL 
     head->next=NULL;
+   
+    // 5->4->3->2->1->
     return newnode;
 
 }
