@@ -41,10 +41,10 @@ void Delete(node* head,int data){
     if(head==NULL){
         return;
     }
-    if(head->next=NULL){
-        deleteAt(head);
-        return;
-    }
+    // if(head->next=NULL){
+    //     deleteAt(head);
+    //     return;
+    // }
     node* temp=head;
     while(temp->next->data!=data){
         temp=temp->next;
@@ -69,12 +69,16 @@ node * head=NULL;
 addAtLast(head,1);
 addAtLast(head,2);
 addAtLast(head,3);
+addAtLast(head,4);
+addAtLast(head,5);
+addAtLast(head,6);
 // add At First
 addAtFirst(head,0);
 // Display Linked List
 Display(head);
 // Delete Data
-Delete(head,3);
+Delete(head,2);
+Delete(head,6);
 
 Display(head);
 return 0;
