@@ -11,6 +11,7 @@ class node{
         this->next=NULL;
     }
 };
+
 // Add value at Last in Linked List 
 void addAtLast(node* &head,int data ){
     node * n=new node(data);
@@ -24,35 +25,7 @@ void addAtLast(node* &head,int data ){
     }
     temp->next=n;
 }
-// Add value at Front
-void addAtFirst(node* &head,int data){
-    node* n=new node(0);
-    n->next=head;
-    head=n;
-}
-// Delete Value at first
-void deleteAt(node * &head){
-    node * todelete=head;
-    head=head->next;
-    delete todelete;
-}
-// Delete Value 
-void Delete(node* head,int data){
-    if(head==NULL){
-        return;
-    }
-    // if(head->next=NULL){
-    //     deleteAt(head);
-    //     return;
-    // }
-    node* temp=head;
-    while(temp->next->data!=data){
-        temp=temp->next;
-    }
-    node* todelete=temp->next;
-    temp->next=temp->next->next;
-    delete todelete;
-}
+
 // Display First Linked List
 void Display(node * head){
     node *temp=head;
@@ -63,23 +36,31 @@ void Display(node * head){
     cout<<endl;
 }
 
+// reverse using Recursion Way
+node* Nreverse(node* &head){
+    if(head==NULL || head->next==NULL){
+        return head;
+    }
+    node* newnode=Nreverse(head->next);
+    head->next->next=head;
+    head->next=NULL;
+    return newnode;
+
+}
 // Main Function
 int main(){
 node * head=NULL;
-// Add at Last
 addAtLast(head,1);
 addAtLast(head,2);
 addAtLast(head,3);
 addAtLast(head,4);
 addAtLast(head,5);
-addAtLast(head,6);
-// add At First
-addAtFirst(head,0);
-// Display Linked List
+
 Display(head);
-// Delete Data
-Delete(head,6);
-// Display Linked List
-Display(head);
+// 1->2->3->4->5->
+node * Newhead=Nreverse(head);
+
+Display(Newhead);
+// 5->4->3->2->1->
 return 0;
 }
