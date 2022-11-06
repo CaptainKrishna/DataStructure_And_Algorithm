@@ -1,14 +1,13 @@
 // JavaScript Practice 
 
 //1.Console Command 
-
 console.log("Hello My name is Krishna Vishawkarma")
 console.clear()
 console.warn("This is Warning")
 console.error("This is Warning")
 
 // 2.Alert Commnd For SHowing Alert
-// alert("This is alert Commnd")
+alert("This is alert Commnd")
 
 // 3.variable Declaration
 Name="Krisna"
@@ -33,7 +32,14 @@ Name="Krishna 2"
 console.log(Name)
 
 // 4.Data Type in JavaScript
-// Number , String , Undefine , Null , bool
+// Number
+const numb=12
+// String
+const strin="Krishna"
+// Declare but undefine
+let unde;
+// Boolean value
+const data=true;
 
 // 5.****** Number to String *********
 let num=12
@@ -44,11 +50,15 @@ let num1="12"
 console.log(typeof (+num1))
 
 // 7.Some String operation
+
 let Name ="   Krishna  "
 console.log("Before trim " + Name.length)
+// removing Blank spaces using trim() Function
 Name=Name.trim()
 console.log("After trim " + Name.length)
+// To upperCase
 console.log(Name.toUpperCase())
+// To LowerCase
 console.log(Name.toLowerCase())
-Name=Name.slice(0,5)
-console.log(Name)
+// Slice Method
+console.log(Name.slice(0,5))

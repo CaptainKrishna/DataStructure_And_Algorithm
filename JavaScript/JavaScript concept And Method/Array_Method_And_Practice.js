@@ -1,7 +1,7 @@
 // Array in JavaScript
 
 // Array Declaring
-const fruits=["apple","Banana","Orange",]
+const fruits=["apple","Banana","Orange"]
 
 // Array Printing using in
 for(i in fruits){
@@ -43,5 +43,5 @@ console.log(val5)
 console.log(val6)
 
 // Spred Operator
-let Abc=[..."12345678910"]
+let Abc=[..."12345678910","123456"]
 console.log(Abc)
