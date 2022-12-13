@@ -1,5 +1,5 @@
 // revers a  string using recursion
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 // cusum function alling
 void reverse(string s)
